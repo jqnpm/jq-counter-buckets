@@ -1,6 +1,6 @@
 {
     "name": "counter-buckets",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Count occurrences of values within a range.",
     "homepage": "https://github.com/joelpurra/jq-counter-buckets",
     "bugs": "https://github.com/joelpurra/jq-counter-buckets/issues",
