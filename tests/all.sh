@@ -30,6 +30,16 @@ null
 create(10)
 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
 
+increment: Can't increment bucket index -1. (Throws error.)
+[ 0, 0, 0 ]
+increment(-1; 9)
+
+
+increment: Can't increment bucket index length. (Throws error.)
+[ 0, 0, 0 ]
+increment(length; 9)
+
+
 increment: Can increment 0 bucket index 0 out of 3 buckets by 9.
 [ 0, 0, 0 ]
 increment(0; 9)

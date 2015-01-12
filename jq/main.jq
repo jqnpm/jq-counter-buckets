@@ -10,7 +10,13 @@ def create($count):
 	end;
 
 def increment($index; $count):
-	.[$index] += $count;
+	if $index < 0 then
+		error("index smaller than 0: " + ($index | tostring))
+	elif $index >= length then
+		error("index larger than bucket count: " + ($index | tostring))
+	else
+		.[$index] += $count
+	end;
 
 def increment($index):
 	increment($index; 1);
